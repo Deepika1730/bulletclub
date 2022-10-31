@@ -1,7 +1,7 @@
 
 - name: Unarchive a tomcat tar from tomcat website
   unarchive:
-    src: https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.14/bin/apache-tomcat-10.0.14.tar.gz
+    src: https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.0.27.tar.gz
     dest: /etc/
     remote_src: yes
     owner: root
@@ -12,7 +12,7 @@
 
 - name: create a soft link to th tomcat folder
   file:
-    src: /etc/apache-tomcat-10.0.14
+    src: /etc/apache-tomcat-10.0.27
     dest: /etc/tomcat
     owner: root
     group: root
